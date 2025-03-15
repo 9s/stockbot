@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:17.4-alpine3.21
+    environment:
+      POSTGRES_USER: stockbot
+      POSTGRES_PASSWORD: stockbot
+      POSTGRES_DB: stockbot
+    ports:
+      - "5432:5432"
+  yfinance:
+    build: prices
+    ports:
+      - "8000:8000"

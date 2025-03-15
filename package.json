@@ -1,0 +1,20 @@
+{
+  "name": "stockbot",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/time-constants": "^1.0.2",
+    "prisma": "^6.5.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "@sapphire/framework": "^5.3.2",
+    "axios": "^1.8.3",
+    "discord.js": "^14.18.0"
+  }
+}
